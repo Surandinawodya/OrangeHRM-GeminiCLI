@@ -1,0 +1,13 @@
+{
+  "name": "orangehrm-playwright-tests",
+  "version": "1.0.0",
+  "description": "Playwright POM project for OrangeHRM",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test --ui"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  }
+}
