@@ -16,7 +16,6 @@ test.describe('Performance Module', () => {
     test('Positive: Search Employee KPIs', async ({ page }) => {
         const perfPage = new PerformancePage(page);
         await perfPage.searchKpis('a');
-        // Use .first() to avoid strict mode violation and wait for content
         await expect(page.locator('.oxd-table-card').first()).toBeVisible({ timeout: 15000 });
     });
 });

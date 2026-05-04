@@ -16,7 +16,6 @@ test.describe('Directory Module', () => {
     test('Positive: Search Employee in Directory', async ({ page }) => {
         const dirPage = new DirectoryPage(page);
         await dirPage.searchDirectory('a');
-        // Use .first() to avoid strict mode violation if multiple cards appear
         await expect(page.locator('.orangehrm-directory-card').first()).toBeVisible({ timeout: 15000 });
     });
 });
